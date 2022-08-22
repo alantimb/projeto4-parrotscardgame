@@ -95,14 +95,7 @@ function verificarCartas() {
             cartasInvertidas = [];
         }
     }
-    finalizarJogo()
+
 }
 
 
-function finalizarJogo() {
-    let acertos = document.querySelectorAll(".clicado")
-    if (acertos.length == qtdCartas) {
-        clearInterval(idInterval);
-        alert(`Você venceu com ${contDeJogadas} rodadas.`) 
-    }
-}
