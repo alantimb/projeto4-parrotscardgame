@@ -1,0 +1,84 @@
+/* fundo */
+body {
+    background: #EEF9BF;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+/* título: PARROT CARD GAME */
+.titulo h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700px;
+    font-size: 56px;
+    line-height: 65.63px;
+    color: #75b79e;
+    margin: 40px;
+    text-align: center;
+}
+
+/* div que segura as cartas */
+.jogo .cartas {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 20vw;
+    padding-right: 20vw;
+}
+
+/* fundo da carta */
+.jogo .cartas .carta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 117px;
+    height: 146px;
+    position: relative;
+    margin-bottom: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* frente da carta */
+.jogo .cartas .carta .face {
+    width: 100%;
+    height: 100%;
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    backface-visibility: hidden;
+    transition: all .5s;
+    transform: preserve-3d;
+}
+
+/* imagem da frente da carta (pássaro) */
+.jogo .cartas .carta .face img {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* @media (min-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+} */
